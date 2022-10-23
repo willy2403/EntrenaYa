@@ -1,0 +1,832 @@
+/*---------- inicio -----------*/
+*{
+    box-sizing: border-box;
+}
+
+.prueba{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.2;
+    grid-template-areas: 
+    "logo nav";
+   
+
+}
+
+.titulo { 
+    grid-area: logo;
+    margin-left: 5px; 
+    font-weight: bold;
+}
+
+.estilolisto { 
+    grid-area: nav;
+    margin-right: 1%;
+     
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    justify-content: space-evenly;
+    
+}
+li{
+    display: inline;
+    
+    
+}
+header a{
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #24293d;
+}
+.titulo{
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.logo{
+    margin-top: 5px;
+    margin-right: 350px;
+    padding-top: 22px;
+}
+
+
+.logo img{
+    width: 50px;
+    height: 45px;
+}
+
+
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+   /* -------------------------main---------------------- */
+
+.animate{
+    text-align: center;
+    background-image:linear-gradient(to right, rgb(0 0 0/ .6 ), rgb(0 0 0/ .6 )) ,url(../Imagenes/rutinas-entrenamiento-funcional.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 97.8vw;
+    height: 99vh;  
+}
+
+.animate__titulo{
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+    padding-right: 100px;
+}
+
+.animate__titulo h1{
+    font-size: 4em;
+    transform: translate(2%, 61%);
+}
+
+.animate__titulo h2{
+    transform: translate(2%, 5%);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2.3em;}
+h4{font-size: 1.6em;}
+p{font-size: 1.5em;}
+
+/* ------------------------ section ---------------------- */
+
+.muevete{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2% 5px;
+    padding-top: 1%;
+    grid-template-areas: 
+    "ritmo casa"
+    " todos cuando";
+}
+
+.ritmo{
+    grid-area: ritmo;
+    text-align: center;
+    background-image:linear-gradient(to right, rgb(0 0 0/ .6 ), rgb(0 0 0/ .6 ) ), url(../Imagenes/ritmo.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 8px 12px black;
+    width: 750px;
+    height: 450px;
+    transition: transform 0.3 ease-in-out;
+ 
+
+}
+
+
+.ritmo h3{
+    font-size: 2.2em;
+    color: white;
+    padding: 50px;
+    transform: translate(-1%, 60%);
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
+    
+}
+.ritmo p{
+    color: white;
+    font-size: 1.4em;
+}
+
+.casa{
+    grid-area: casa;
+    text-align: center;
+    background-image:linear-gradient(to right, rgb(0 0 0/ .6 ), rgb(0 0 0/ .6 )), url(../Imagenes/casa.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 8px 12px black;
+    width: 750px;
+    height: 450px;
+}
+
+.casa h3{
+    font-size: 2.2em;
+    color: white;
+    padding: 50px;
+    transform: translate(-1%, 60%);
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
+}
+
+.casa p{
+    color: white;
+    font-size: 1.4em;
+}
+
+.todos{
+    grid-area: todos;
+    text-align: center;
+    background-image:linear-gradient(to right, rgb(0 0 0/ .6 ), rgb(0 0 0/ .6 )), url(../Imagenes/todos.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 8px 12px black;
+    width: 750px;
+    height: 450px;
+}
+.todos h3{
+    font-size: 2.2em;
+    color: white;
+    padding: 50px;
+    transform: translate(-1%, 60%);
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
+}
+
+.todos p{
+    color: white;
+    font-size: 1.4em;
+}
+
+.cuando{
+    grid-area: cuando;
+    text-align: center;
+    background-image:linear-gradient(to right, rgb(0 0 0/ .6 ), rgb(0 0 0/ .6 )), url(../Imagenes/cuando.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 5px 8px 12px black;
+    width: 750px;
+    height: 450px;
+}
+
+.cuando h3{
+    font-size: 2.2em;
+    color: white;
+    padding: 50px;
+    transform: translate(-1%, 60%);
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
+}
+
+.cuando p{
+    color: white;
+    font-size: 1.4em;
+}
+
+/* ------------------ article ------------------------ */
+.video{
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+.video h2{
+    color: black;
+}
+
+
+/* -----------------------------footer-------------------------------- */
+
+.publicidad{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: bold;
+
+}
+
+.media{
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+
+}
+
+.media img{
+    width: 50px;
+    display: block;
+}
+
+.what{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+}
+
+.what img{
+    width: 50px;
+}
+
+.logo2{
+width: 20%;
+}
+
+/* --------------------Tamaño Tablet -----------------*/
+@media screen and (max-width:768px){
+    .muevete{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 2%;
+        padding-top: 1%;
+        grid-template-areas: 
+        "ritmo" 
+        "casa"
+        "todos" 
+        "cuando";
+    }
+}
+
+ /*---------------------------NOSOTROS--------------------------*/
+
+
+
+ /* --------------------------Section----------------------- */
+
+ .conocenos{
+    width: 750px;
+    text-align: center;
+    margin: auto;
+ }
+
+ .conocenos h1{
+    font-size: 3.5em;
+    margin: auto;
+ }
+
+ .conocenos h2{
+    margin: auto;
+ }
+ 
+
+ .container{
+    margin-left: 60px;
+    width: 600px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    gap: 1% 3px;
+    grid-template-areas: 
+    "inspirador dinamico"
+    "personal infalible";
+ }
+ 
+ .inspirador{
+    grid-area: inspirador;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .inspirador figure{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .inspirador img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+
+ .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11,103,123,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: visible;
+    text-align: center;
+ }
+
+ .capa:hover {
+    opacity: 1;
+    visibility: visible;
+
+ }
+
+ figure:hover img{
+    transform: scale(1.3);
+ }
+
+ .capa:hover h3{
+    margin-top: 130px;
+    margin-bottom: 20px;
+
+ }
+
+  .capa h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 150px;
+    font-size: 2.5em;
+ }
+
+  .capa p{
+    color: white;
+    font-size: 1.6em;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: auto;
+ 
+ }
+
+ .dinamico{
+    grid-area: dinamico;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .dinamico figure{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .dinamico img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+
+ .personal{
+    grid-area: personal;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .personal figure{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .personal img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+
+ .infalible{
+    grid-area: infalible;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .infalible figure{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .infalible img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+
+ .article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr;
+    gap: 2% 5px;
+    grid-template-areas: 
+    "metodos";
+ }
+
+ .metodos{
+    grid-area: metedos;
+    margin-top: 30px;
+    text-align: center;
+ }
+
+ article img{
+    display: flex;
+    align-content: center;
+    margin: auto;
+ }
+
+ .metodos h3{
+    font-size: 2.8em ;
+ }
+
+ /* ------------- Tamaño tablet ------------ */
+
+ @media screen and (max-width:768px){
+    .conocenos h1{
+        font-size: 3.0em;
+     }
+    
+     .conocenos h2{
+        font-size: 2.0em;
+     }
+     
+    .container{
+        margin-left: 50px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 0.4fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+        gap: 1%;
+        grid-template-areas: 
+        "inspirador"
+        "dinamico"
+        "personal"
+        "infalible";
+     }
+
+     .metodos{
+        grid-area: metedos;
+        margin-top: 80px;
+        text-align: center;
+     }
+
+     .metodos h3{
+        transform: translate(-1%, 60%);
+        font-size: 2.2em;
+     }
+
+     .metodos p{
+        transform: translate(-1%, 60%);
+        font-size: 1.2em;
+     }
+
+     .metodos_ img{
+        height: 350px;
+        width: 550px;
+     }
+ }
+
+ /* ------------- Tamaño movil ----------- */
+
+ @media screen and (max-width: 500px){
+
+    .container{
+        margin-left: 10px;
+        width: 400px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 0.4fr;
+        grid-template-rows: 0.2fr 0.2fr;
+        gap: 1% 3px;
+        grid-template-areas: 
+        "inspirador"
+        "dinamico"
+        "personal"
+        "infalible";
+     }
+
+    .inspirador figure{
+        width: 550px;
+        height: 350px;
+     }
+     
+     .dinamico figure{
+        width: 550px;
+        height: 350px;
+     }
+    
+     .personal figure{
+        width: 550px;
+        height: 350px;
+        
+     }
+     
+     .infalible figure{
+        width: 550px;
+        height: 350px;
+
+     }
+    
+    .conocenos h1{
+        font-size: 2.7em;
+     }
+    
+     .conocenos h2{
+        display: none;
+     }
+    
+
+     .metodos{
+      display: none;
+        
+     }
+
+     .metodos_ img{
+        display: none;
+     }
+
+     .publicidad{
+        padding-top: 20px;
+        text-align: end; 
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+     }
+
+ }
+
+/* ----------------------Programas-------------------- */
+
+.programas_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+
+.programas_:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.programas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-auto-rows: minmax(450px,auto);
+    gap: 15px;
+    padding: 20px;
+    grid-auto-flow: dense;
+ }
+
+ .programas_ img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------Tamaño Tablet---------------- */
+@media screen and (max-width:768px){
+
+    .programas{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: minmax(200px,auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+
+}
+
+
+ /* ---------------------Galeria---------------------- */
+ .entrena{
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 2px 2px #000;    
+    }
+
+     
+ .gale{
+    font-family: sans-serif;
+ }
+
+ .gale_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3 ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+ }
+
+ .gale_:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+ }
+
+ .galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-auto-rows: minmax(450px,auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+ }
+ .gale_ img{
+    width: 100%;
+    height: 100%;
+}
+
+.wide{
+    grid-column: span 2;
+    }
+    
+.tall{
+    grid-template-rows: span 2;
+    }
+   
+.tall2{
+    grid-column: span 3;
+    }    
+    
+/* ------------ tamaño tablet--------------- */
+
+@media screen and (max-width:768px){
+    .entrena h1{
+        font-size: 2.5em;
+    }
+    .entrena h2{
+        font-size: 1.9em;
+    }
+    .entrena p{
+      display: none;
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-auto-rows: minmax(200px,auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+}
+    .publicidad p{
+    font-size: 1.2em;
+}
+
+}
+/* -------------- tamaño celular ------------ */
+
+@media screen and (max-width: 500px){
+   
+    .entrena h1{
+        font-size: 2.0em;
+    }
+    .entrena h2{
+        font-size: 1.5em;
+    }
+    .entrena p{
+       display: none;
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-auto-rows: minmax(100px,auto);
+        gap: 20px;
+        padding: 20px;
+        grid-auto-flow: dense;
+    }
+    
+    .borra{
+        display: none;
+
+    }
+
+    .publicidad p{
+        font-size: 1.0em;
+    }
+}
+
+
+/* ---------------------Contacto ----------------- */
+
+main{
+    background-color:gray;
+}
+.empeza{
+    margin: auto;
+    height: 400px;
+    width: 350px; 
+    align-items: center;
+    padding-top: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 2px 2px #000; 
+}
+
+.paso{
+    display: flex;
+    justify-content: space-evenly;
+}
+.paso h2{
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.paso p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.contactos1{
+    text-align: start;
+}
+
+.contactos2{
+    align-content: flex-end;
+}
+
+/* ------------------------Tamaño Tablet ------------------------ */
+
+@media screen and (max-width:768px){
+
+    .formu{
+       border: #000;
+        width: 350px;
+    }
+    .formu h3{
+       font-size: 1.6em;
+    }
+}
