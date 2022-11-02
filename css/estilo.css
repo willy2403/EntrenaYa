@@ -10,55 +10,28 @@
     grid-template-columns: 0.8fr 1.2fr;
     grid-template-rows: 0.2;
     grid-template-areas: 
-    "logo nav";
+    "nav logo";
    
 
 }
 
 .titulo { 
     grid-area: logo;
-    margin-left: 5px; 
-    font-weight: bold;
-}
-
-.estilolisto { 
-    grid-area: nav;
-    margin-right: 1%;
-     
-}
-
-ul{
     display: flex;
-    justify-content: end;
-    justify-content: space-evenly;
-    
-}
-li{
-    display: inline;
-    
-    
-}
-header a{
-    list-style: none;
-    text-decoration: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 3px; 
     font-weight: bold;
-    color: black;
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-header a:hover{
-    color: #24293d;
+.titulo h3{
+    font-size: 2.0em;
 }
-.titulo{
-    display: flex;
-    justify-content:space-between;
-
-}
-
 .logo{
-    margin-top: 5px;
-    margin-right: 350px;
-    padding-top: 22px;
+    margin-top: 1px;
+    margin-right: 5px;
+    padding-top: 2px;
 }
 
 
@@ -104,7 +77,7 @@ body{
 }
 
 .animate__titulo h2{
-    transform: translate(2%, 5%);
+    transform: translate(2%, 62%);
 }
 
 h1{font-size: 3.5em;}
@@ -149,13 +122,14 @@ p{font-size: 1.5em;}
     font-size: 2.2em;
     color: white;
     padding: 50px;
-    transform: translate(-1%, 60%);
+    transform: translate(-1%, 90%);
     text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
     
 }
 .ritmo p{
     color: white;
     font-size: 1.4em;
+    transform: translate(-1%, 188%);
 }
 
 .casa{
@@ -175,13 +149,14 @@ p{font-size: 1.5em;}
     font-size: 2.2em;
     color: white;
     padding: 50px;
-    transform: translate(-1%, 60%);
+    transform: translate(-1%, 90%);
     text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
 }
 
 .casa p{
     color: white;
     font-size: 1.4em;
+    transform: translate(-1%, 188%);
 }
 
 .todos{
@@ -200,13 +175,14 @@ p{font-size: 1.5em;}
     font-size: 2.2em;
     color: white;
     padding: 50px;
-    transform: translate(-1%, 60%);
+    transform: translate(-1%, 90%);
     text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
 }
 
 .todos p{
     color: white;
     font-size: 1.4em;
+    transform: translate(-1%, 188%);
 }
 
 .cuando{
@@ -226,17 +202,19 @@ p{font-size: 1.5em;}
     font-size: 2.2em;
     color: white;
     padding: 50px;
-    transform: translate(-1%, 60%);
+    transform: translate(-1%, 90%);
     text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
 }
 
 .cuando p{
     color: white;
     font-size: 1.4em;
+    transform: translate(-1%, 188%);
 }
 
 /* ------------------ article ------------------------ */
 .video{
+    margin-top: 30px;
     text-align: center;
     font-weight: bold;
    
@@ -299,7 +277,130 @@ width: 20%;
         "todos" 
         "cuando";
     }
+    .prueba h3{
+        font-size: 1.9em;
+    }
+    .logo img{
+        width: 40px;
+        height: 35px;
+    }
+    .animate{
+        width: 98vw;
+        height: 95vh;  
+    }
+    .animate h1{
+        font-size: 3.0em;
+    }
+    .animate h2{
+        font-size: 2.2em;
+    }
+
+    .ritmo{
+        width: 750px;
+        height: 370px;
+    }
+    .casa{
+        width: 750px;
+        height: 370px;
+    }
+    .todos{
+        width: 750px;
+        height: 370px;
+    }
+    .cuando{
+        width: 750px;
+        height: 370px;
+    }
+
+
+    .video{
+        display: none;
+    }
+
+    .publicidad{
+        margin-top: 90px;
+    }
 }
+
+/* -------------------Tamaño movil-------------- */
+@media screen and (max-width: 500px){
+    .animate{
+        width: 100%;
+        height: 100%;  
+    }
+    .prueba h3{
+        font-size: 1.5em;
+    }
+    .logo img{
+        width: 30px;
+        height: 25px;
+    }
+    .animate h1{
+        font-size: 2.0em;
+        transform: translate(16%, -181%);
+
+    }
+    .animate h2{
+        font-size: 1.5em;
+        transform: translate(17%, -127%);
+    }
+
+    .ritmo{
+        width: 100%;
+        height: 100%;
+    }
+    .ritmo h3{
+        font-size: 1.4em; 
+        transform: translate(0%, 11%);    
+    }
+
+    .ritmo p{
+        font-size: 1.0em; 
+        transform: translate(-1%, -90%);
+    }
+    
+    .casa{
+        width: 100%;
+        height: 100%;
+    }
+    .casa h3{
+        font-size: 1.4em; 
+        transform: translate(0%, 11%);  
+    }
+    .casa p{
+        font-size: 1.0em; 
+        transform: translate(-1%, -168%);
+    }    
+
+    .todos{
+        width: 100%;
+        height: 100%;
+    }
+    .todos h3{
+        font-size: 1.4em; 
+        transform: translate(0%, 11%);
+    }
+    .todos p{
+        font-size: 1.0em; 
+        transform: translate(-1%, -90%);
+    }
+    .cuando{
+        width: 100%;
+        height: 100%;
+    }
+    .cuando h3{
+        font-size: 1.4em; 
+        transform: translate(0%, 11%);
+    }
+    .cuando p{
+        font-size: 1.0em; 
+        transform: translate(1%, -181%);
+    }
+
+    
+}
+
+
 
  /*---------------------------NOSOTROS--------------------------*/
 
@@ -311,6 +412,8 @@ width: 20%;
     width: 750px;
     text-align: center;
     margin: auto;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
  }
 
  .conocenos h1{
@@ -346,8 +449,8 @@ width: 20%;
 
  .inspirador figure{
     position: relative;
-    width: 750px;
-    height: 550px;
+    width: 900px;
+    height: 600px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -415,8 +518,8 @@ width: 20%;
 
  .dinamico figure{
     position: relative;
-    width: 750px;
-    height: 550px;
+    width: 900px;
+    height: 600px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -438,8 +541,8 @@ width: 20%;
 
  .personal figure{
     position: relative;
-    width: 750px;
-    height: 550px;
+    width: 900px;
+    height: 600px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -461,8 +564,8 @@ width: 20%;
 
  .infalible figure{
     position: relative;
-    width: 750px;
-    height: 550px;
+    width: 900px;
+    height: 600px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -621,13 +724,11 @@ width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #03afff;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
- 
 }
 
 .programas_:hover{
@@ -671,7 +772,7 @@ width: 20%;
     font-weight: bold;
     color: #ffffff;
     font-weight: 700;
-    text-shadow: 2px 2px #000;    
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
     }
 
      
@@ -787,7 +888,7 @@ main{
 }
 .empeza{
     margin: auto;
-    height: 400px;
+    height: 200px;
     width: 350px; 
     align-items: center;
     padding-top: 30px;
