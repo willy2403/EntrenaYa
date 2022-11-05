@@ -616,6 +616,7 @@ width: 20%;
     .container{
         margin-left: 50px;
         margin-top: 50px;
+        width: 300px;
         display: grid;
         grid-template-columns: 0.4fr;
         grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
@@ -654,12 +655,9 @@ width: 20%;
  @media screen and (max-width: 500px){
 
     .container{
-        margin-left: 10px;
-        width: 400px;
-        margin-top: 50px;
         display: grid;
         grid-template-columns: 0.4fr;
-        grid-template-rows: 0.2fr 0.2fr;
+        grid-template-rows: 1fr 1fr;
         gap: 1% 3px;
         grid-template-areas: 
         "inspirador"
@@ -668,37 +666,68 @@ width: 20%;
         "infalible";
      }
 
+     .conocenos{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        
+     }
+
+     .conocenos h1{
+        text-align: center;
+        font-size: 1.5em;
+     }
+     .conocenos h2{
+        text-align: center;
+        font-size: 0.8em;
+     }
+
+    .inspirador{
+        width: 300px;
+        height: 250px;
+    } 
     .inspirador figure{
-        width: 550px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
+     }
+
+     .dinamico{
+        width: 300px;
+        height: 250px;
      }
      
      .dinamico figure{
-        width: 550px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
      }
-    
+     .personal{
+        width: 300px;
+        height: 250px;
+     }
      .personal figure{
-        width: 550px;
-        height: 350px;
-        
+        width: 100%;
+        height: 100%;  
      }
-     
+     .infalible{
+        width: 300px;
+        height: 250px;
+     }
      .infalible figure{
-        width: 550px;
-        height: 350px;
+        width: 100%;
+        height: 100%;
 
      }
-    
-    .conocenos h1{
-        font-size: 2.7em;
+     .capa h3{
+        color: white;
+        font-weight: 400;
+        margin-bottom: 15px;
+        transition: all 500ms ease-out;
+        font-size: 1.6em;
      }
     
-     .conocenos h2{
+      .capa p{
         display: none;
      }
-    
-
      .metodos{
       display: none;
         
@@ -719,49 +748,224 @@ width: 20%;
  }
 
 /* ----------------------Programas-------------------- */
-
-.programas_{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.programas_:hover{
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
 .programas{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-    grid-auto-rows: minmax(450px,auto);
-    gap: 15px;
-    padding: 20px;
-    grid-auto-flow: dense;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    padding-top: 1%;
+    margin-left: 50px;
+    grid-template-areas: 
+    "fuerza resistencia"
+    " potencia flexibilidad";
  }
 
- .programas_ img{
+ .fuerza{
+    grid-area: fuerza;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .fuerza figure{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .fuerza img{
     width: 100%;
     height: 100%;
-}
+    transition: all 500ms ease-out;
+ }
+ 
+ .resistencia{
+    grid-area: resistencia;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .resistencia figure{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .resistencia img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+ .potencia{
+    grid-area: potencia;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .potencia figure{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .potencia img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+ .flexibilidad{
+    grid-area: flexibilidad;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .flexibilidad figure{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+ }
+ 
+ .flexibilidad img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+ }
+
+
 
 /* ----------------------Tamaño Tablet---------------- */
 @media screen and (max-width:768px){
 
-    .programas{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-auto-rows: minmax(200px,auto);
-        gap: 20px;
-        padding: 20px;
-        grid-auto-flow: dense;
+    .entrena{
+        width: 600px;
+    }
+    .entrena h1{
+        font-size: 3.0em;
+    }
+    .entrena h2{
+        font-size: 2.5em;
     }
 
+    .programas{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 1%;
+        padding-top: 1%;
+        grid-template-areas: 
+        "fuerza" 
+        "resistencia"
+        "potencia" 
+        "flexibilidad";
+    }
+     .fuerza{
+        grid-area: fuerza;
+        width: 650px;
+        height: 450px;
+    } 
+    .fuerza figure{
+        width: 100%;
+        height: 100%;
+     }
+
+     
+    .resistencia{
+        grid-area: resistencia;
+        width: 650px;
+        height: 450px;
+     }
+
+     .resistencia figure{
+        width: 100%;
+        height: 100%;
+     }
+     
+    .potencia{
+        grid-area: potencia;
+        width: 650px;
+        height: 450px;
+     }
+     .potencia figure{
+        width: 100%;
+        height: 100%;
+     }
+     
+    .flexibilidad{
+        grid-area: flexibilidad;
+        width: 650px;
+        height: 450px;
+    }
+    .flexibilidad figure{
+        width: 100%;
+        height: 100%;
+     }
+        
+     }
+/* --------------------Tamaño Movil ------------------ */
+@media screen and (max-width: 500px){
+    .programas{
+        display: grid;
+        grid-template-columns: 0.4fr;
+        grid-template-rows: 0.4fr 0.4fr;
+        gap: 1%;
+        margin-left: 10px;
+        grid-template-areas: 
+        "fuerza" 
+        "resistencia"
+        "potencia" 
+        "flexibilidad";
+     }
+     .fuerza{
+        grid-area: fuerza;
+        width: 350px;
+        height: 250px;
+     }
+
+     
+    .resistencia{
+        grid-area: resistencia;
+        width: 350px;
+        height: 250px;
+     }
+     
+    .potencia{
+        grid-area: potencia;
+        width: 350px;
+        height: 250px;
+     }
+     
+    .flexibilidad{
+        grid-area: flexibilidad;
+        width: 350px;
+        height: 250px;
+    }
+    .capa{
+        text-align: center;
+     }
+    
 }
 
 
@@ -784,7 +988,6 @@ width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #03afff;
     border-radius: 4px;
     transition: transform 0.3 ease-in-out;
     background-size: cover;
@@ -853,10 +1056,12 @@ width: 20%;
 @media screen and (max-width: 500px){
    
     .entrena h1{
-        font-size: 2.0em;
+        transform: translate(-18%, 11%);
+        font-size: 1.8em;
     }
     .entrena h2{
-        font-size: 1.5em;
+        transform: translate(-18%, -29%);
+        font-size: 1.4em;
     }
     .entrena p{
        display: none;
@@ -874,6 +1079,13 @@ width: 20%;
         display: none;
 
     }
+    .publicidad{
+        padding-top: 20px;
+        text-align: end; 
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+     }
 
     .publicidad p{
         font-size: 1.0em;
@@ -911,23 +1123,61 @@ main{
     font-size: 1.2em;
 }
 
-.contactos1{
-    text-align: start;
-}
-
-.contactos2{
-    align-content: flex-end;
-}
 
 /* ------------------------Tamaño Tablet ------------------------ */
 
 @media screen and (max-width:768px){
+.empeza{
+    height: 150px;
+    width: 300px; 
+}
+.empeza h1{
+ font-size: 3.0em;   
+}
+.empeza p{
+    font-size: 1.2em;
+}
 
-    .formu{
-       border: #000;
-        width: 350px;
+.formu h3{
+    font-size: 1.5em;
+}
+.formu label{
+    font-size: 0.9em;
+}
+
+.paso h2{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.paso p{
+    text-align: center;
+    font-size: 0.9em;
+}
+}
+/* -------------Tamaño Movil---------------- */
+@media screen and (max-width: 500px){
+    .empeza{
+        height: 150px;
+        width: 300px; 
     }
-    .formu h3{
-       font-size: 1.6em;
+    .empeza h1{
+     font-size: 2.2em;   
+    }
+    .empeza p{
+        font-size: 1.0em;
+    }
+
+    .paso{
+        display: flex;
+        flex-direction: column;
+    }
+    .paso h2{
+        text-align: center;
+        font-size: 1.2em;
+    }
+    .paso p{
+        text-align: center;
+        font-size: 0.9em;
     }
 }
