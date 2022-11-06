@@ -499,7 +499,6 @@ width: 20%;
     line-height: 1.5;
     max-width: 500px;
     margin: auto;
- 
  }
 
  .dinamico{
@@ -581,7 +580,7 @@ width: 20%;
  }
 
  .metodos{
-    grid-area: metedos;
+    grid-area: metodos;
     margin-top: 30px;
     text-align: center;
  }
@@ -971,9 +970,7 @@ width: 20%;
     color: #ffffff;
     font-weight: 700;
     text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
-    }
-
-     
+    }    
  .gale{
     font-family: sans-serif;
  }
@@ -1118,7 +1115,7 @@ main{
 }
 
 
-/* ------------------------Tamaño Tablet ------------------------ */
+/* --------------------Tamaño Tablet ------------------ */
 
 @media screen and (max-width:768px){
 .empeza{

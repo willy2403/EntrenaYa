@@ -1,0 +1,198 @@
+/* ----------------------Programas-------------------- */
+.programas{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    padding-top: 1%;
+    margin-left: 50px;
+    grid-template-areas: 
+    "fuerza resistencia"
+    " potencia flexibilidad";
+ }
+ .fuerza{
+    grid-area: fuerza;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    figure{
+        position: relative;
+        width: 900px;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+     }
+     img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+     }    
+ }
+ .resistencia{
+    grid-area: resistencia;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    figure{
+        position: relative;
+        width: 900px;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+     }
+     img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+     }    
+ }
+ .potencia{
+    grid-area: potencia;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    figure{
+        position: relative;
+        width: 900px;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+     }
+     img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+     }
+ }
+ .flexibilidad{
+    grid-area: flexibilidad;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    figure{
+        position: relative;
+        width: 900px;
+        height: 600px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
+     }
+     img{
+        width: 100%;
+        height: 100%;
+        transition: all 500ms ease-out;
+     }
+ }
+ /* ----------------------Tamaño Tablet---------------- */
+ @media screen and (max-width:768px){
+
+    .entrena{
+        width: 600px;
+        h1{
+            font-size: 3.0em;
+        }
+        h2{
+            font-size: 2.5em;
+        } 
+    }
+    .programas{
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 1%;
+        padding-top: 1%;
+        grid-template-areas: 
+        "fuerza" 
+        "resistencia"
+        "potencia" 
+        "flexibilidad";
+    }
+    .fuerza{
+        grid-area: fuerza;
+        width: 650px;
+        height: 450px;
+        figure{
+            width: 100%;
+            height: 100%;
+         }
+    } 
+    .resistencia{
+        grid-area: resistencia;
+        width: 650px;
+        height: 450px;
+        figure{
+            width: 100%;
+            height: 100%;
+         }
+     }
+     .potencia{
+        grid-area: potencia;
+        width: 650px;
+        height: 450px;
+        figure{
+            width: 100%;
+            height: 100%;
+         }
+     }
+     .flexibilidad{
+        grid-area: flexibilidad;
+        width: 650px;
+        height: 450px;
+        figure{
+            width: 100%;
+            height: 100%;
+         }
+    }
+}
+/* --------------------Tamaño Movil ------------------ */
+@media screen and (max-width: 500px){
+    .programas{
+        display: grid;
+        grid-template-columns: 0.4fr;
+        grid-template-rows: 0.4fr 0.4fr;
+        gap: 1%;
+        margin-left: 10px;
+        grid-template-areas: 
+        "fuerza" 
+        "resistencia"
+        "potencia" 
+        "flexibilidad";
+     }
+     .fuerza{
+        grid-area: fuerza;
+        width: 350px;
+        height: 250px;
+     }
+     .resistencia{
+        grid-area: resistencia;
+        width: 350px;
+        height: 250px;
+     }
+     .potencia{
+        grid-area: potencia;
+        width: 350px;
+        height: 250px;
+     }
+     .flexibilidad{
+        grid-area: flexibilidad;
+        width: 350px;
+        height: 250px;
+    }
+    .capa{
+        text-align: center;
+     }  
+}
+
+     
+

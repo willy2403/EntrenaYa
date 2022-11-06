@@ -1,0 +1,82 @@
+/* ---------------------Contacto ----------------- */
+main{
+    background-color:gray;
+}
+.empeza{
+    margin: auto;
+    height: 200px;
+    width: 350px; 
+    align-items: center;
+    padding-top: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 2px 2px #000; 
+}
+.paso{
+    display: flex;
+    justify-content: space-evenly;
+    h2{
+        text-align: center;
+        font-size: 1.8em;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+/* --------------------Tamaño Tablet ------------------ */
+@media screen and (max-width:768px){
+    .empeza{
+        height: 150px;
+        width: 300px;
+        h1{
+            font-size: 3.0em;   
+           }
+           p{
+            font-size: 1.2em;
+        }
+    }
+    .formu{
+        label{
+            font-size: 0.9em;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+    }
+    .paso{
+        h2{
+            text-align: center;
+            font-size: 1.4em;
+        }
+        p{
+            text-align: center;
+            font-size: 0.9em;
+        }
+    }  
+}
+/* ---------------Tamaño Movil---------------- */
+@media screen and (max-width: 500px){
+    .empeza{
+        height: 150px;
+        width: 300px; 
+        h1{
+            font-size: 2.2em;   
+           }
+           p{
+            font-size: 1.0em;
+        }
+    }
+    .paso{
+        display: flex;
+        flex-direction: column;
+        h2{
+            text-align: center;
+            font-size: 1.2em;
+        }
+        p{
+            text-align: center;
+            font-size: 0.9em;
+        }
+    }
+}
