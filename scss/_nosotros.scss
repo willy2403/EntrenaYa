@@ -1,0 +1,29 @@
+ /*-------------------------NOSOTROS-----------------------*/
+/* --------------------------Section----------------------- */
+
+.conocenos{
+    width: 750px;
+    text-align: center;
+    margin: auto;
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
+    h1{
+        font-size: 3.5em;
+        margin: auto;
+     }
+     h2{
+        margin: auto;
+     }    
+ }
+ .container{
+    margin-left: 60px;
+    width: 600px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    gap: 1% 3px;
+    grid-template-areas: 
+    "inspirador dinamico"
+    "personal infalible";
+ }

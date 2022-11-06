@@ -1,3 +1,398 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.3em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/*---------- inicio -----------*/
+.prueba {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 0.2;
+  grid-template-areas: "nav logo";
+}
+
+.titulo {
+  grid-area: logo;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 3px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.titulo h3 {
+  font-size: 2em;
+}
+
+.logo {
+  margin-top: 1px;
+  margin-right: 5px;
+  padding-top: 2px;
+}
+.logo img {
+  width: 50px;
+  height: 45px;
+}
+
+/* -------------------------main---------------------- */
+.animate {
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Imagenes/rutinas-entrenamiento-funcional.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 5px 8px 12px black;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 97.8vw;
+  height: 99vh;
+}
+
+.animate__titulo {
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  padding-right: 100px;
+}
+.animate__titulo h1 {
+  font-size: 4em;
+  transform: translate(2%, 61%);
+}
+.animate__titulo h2 {
+  transform: translate(2%, 62%);
+}
+
+/* ------------------------ section ---------------------- */
+.muevete {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2% 5px;
+  padding-top: 1%;
+  grid-template-areas: "ritmo casa" " todos cuando";
+}
+
+.ritmo {
+  grid-area: ritmo;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Imagenes/ritmo.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+  width: 750px;
+  height: 450px;
+  transition: transform 0.3 ease-in-out;
+}
+.ritmo h3 {
+  font-size: 2.2em;
+  color: white;
+  padding: 50px;
+  transform: translate(-1%, 90%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.ritmo p {
+  color: white;
+  font-size: 1.4em;
+  transform: translate(-1%, 188%);
+}
+
+.casa {
+  grid-area: casa;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Imagenes/casa.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+  width: 750px;
+  height: 450px;
+}
+.casa h3 {
+  font-size: 2.2em;
+  color: white;
+  padding: 50px;
+  transform: translate(-1%, 90%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.casa p {
+  color: white;
+  font-size: 1.4em;
+  transform: translate(-1%, 188%);
+}
+
+.todos {
+  grid-area: todos;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Imagenes/todos.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+  width: 750px;
+  height: 450px;
+}
+.todos h3 {
+  font-size: 2.2em;
+  color: white;
+  padding: 50px;
+  transform: translate(-1%, 90%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.todos p {
+  color: white;
+  font-size: 1.4em;
+  transform: translate(-1%, 188%);
+}
+
+.cuando {
+  grid-area: cuando;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Imagenes/cuando.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 5px 8px 12px black;
+  width: 750px;
+  height: 450px;
+}
+.cuando h3 {
+  font-size: 2.2em;
+  color: white;
+  padding: 50px;
+  transform: translate(-1%, 90%);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.cuando p {
+  color: white;
+  font-size: 1.4em;
+  transform: translate(-1%, 188%);
+}
+
+/* ------------------ article ------------------------ */
+.video {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.video h2 {
+  color: black;
+}
+
+/* -------------------footer--------------------- */
+.publicidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+.media {
+  position: fixed;
+  right: 0;
+  bottom: 50%;
+}
+.media img {
+  width: 50px;
+  display: block;
+}
+
+.what {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+}
+.what img {
+  width: 50px;
+}
+
+.logo2 {
+  width: 20%;
+}
+
+/* --------------------Tamaño Tablet -----------------*/
+@media screen and (max-width: 768px) {
+  .muevete {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    padding-top: 1%;
+    grid-template-areas: "ritmo" "casa" "todos" "cuando";
+  }
+  .prueba h3 {
+    font-size: 1.9em;
+  }
+  .logo img {
+    width: 40px;
+    height: 35px;
+  }
+  .animate {
+    width: 98vw;
+    height: 95vh;
+  }
+  .animate h1 {
+    font-size: 3em;
+  }
+  .animate h2 {
+    font-size: 2.2em;
+  }
+  .ritmo {
+    width: 750px;
+    height: 370px;
+  }
+  .casa {
+    width: 750px;
+    height: 370px;
+  }
+  .todos {
+    width: 750px;
+    height: 370px;
+  }
+  .cuando {
+    width: 750px;
+    height: 370px;
+  }
+  .video {
+    display: none;
+  }
+  .publicidad {
+    margin-top: 90px;
+  }
+}
+/* -------------------Tamaño movil-------------- */
+@media screen and (max-width: 500px) {
+  .animate {
+    width: 100%;
+    height: 100%;
+  }
+  .prueba h3 {
+    font-size: 1.5em;
+  }
+  .logo img {
+    width: 30px;
+    height: 25px;
+  }
+  .animate h1 {
+    font-size: 2em;
+    transform: translate(16%, -181%);
+  }
+  animate h2 {
+    font-size: 1.5em;
+    transform: translate(17%, -127%);
+  }
+  .ritmo {
+    width: 100%;
+    height: 100%;
+  }
+  .ritmo h3 {
+    font-size: 1.4em;
+    transform: translate(0%, 11%);
+  }
+  .ritmo p {
+    font-size: 1em;
+    transform: translate(-1%, -90%);
+  }
+  .casa {
+    width: 100%;
+    height: 100%;
+  }
+  .casa h3 {
+    font-size: 1.4em;
+    transform: translate(0%, 11%);
+  }
+  .casa p {
+    font-size: 1em;
+    transform: translate(-1%, -168%);
+  }
+  .todos {
+    width: 100%;
+    height: 100%;
+  }
+  .todos h3 {
+    font-size: 1.4em;
+    transform: translate(0%, 11%);
+  }
+  .todos p {
+    font-size: 1em;
+    transform: translate(-1%, -90%);
+  }
+  .cuando {
+    width: 100%;
+    height: 100%;
+  }
+  .cuando h3 {
+    font-size: 1.4em;
+    transform: translate(0%, 11%);
+  }
+  .cuando p {
+    font-size: 1em;
+    transform: translate(1%, -181%);
+  }
+}
+/*-------------------------NOSOTROS-----------------------*/
+/* --------------------------Section----------------------- */
+.conocenos {
+  width: 750px;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.conocenos h1 {
+  font-size: 3.5em;
+  margin: auto;
+}
+.conocenos h2 {
+  margin: auto;
+}
+
+.container {
+  margin-left: 60px;
+  width: 600px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr;
+  grid-template-rows: 0.2fr 0.2fr;
+  gap: 1% 3px;
+  grid-template-areas: "inspirador dinamico" "personal infalible";
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -11,8 +11,6 @@
     grid-template-rows: 0.2;
     grid-template-areas: 
     "nav logo";
-   
-
 }
 
 .titulo { 
@@ -113,8 +111,6 @@ p{font-size: 1.5em;}
     width: 750px;
     height: 450px;
     transition: transform 0.3 ease-in-out;
- 
-
 }
 
 
@@ -225,21 +221,19 @@ p{font-size: 1.5em;}
 }
 
 
-/* -----------------------------footer-------------------------------- */
+/* ---------------------------footer------------------------------ */
 
 .publicidad{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-weight: bold;
-
 }
 
 .media{
     position: fixed;
     right: 0;
     bottom: 50%;
-
 }
 
 .media img{
@@ -402,7 +396,7 @@ width: 20%;
 
 
 
- /*---------------------------NOSOTROS--------------------------*/
+ /*-------------------------NOSOTROS-----------------------*/
 
 
 
