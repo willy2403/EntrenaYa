@@ -29,6 +29,11 @@ p {
   font-size: 1.5em;
 }
 
+.ritmo {
+  height: 750px;
+  width: 450px;
+}
+
 /*---------- inicio -----------*/
 .prueba {
   display: grid;
@@ -104,6 +109,11 @@ p {
 }
 
 .ritmo {
+  height: 750px;
+  width: 450px;
+}
+
+.ritmo {
   grid-area: ritmo;
   text-align: center;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../Imagenes/ritmo.jpg);
@@ -112,8 +122,6 @@ p {
   background-position: center;
   border-radius: 15px;
   box-shadow: 5px 8px 12px black;
-  width: 750px;
-  height: 450px;
   transition: transform 0.3 ease-in-out;
 }
 .ritmo h3 {

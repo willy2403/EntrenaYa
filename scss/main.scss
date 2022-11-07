@@ -1,4 +1,13 @@
 @import "clasebody";
+
+@mixin sizes ($ancho,$alto){
+    height: $alto;
+    width: $ancho;
+}
+.ritmo{
+    @include sizes(450px,750px)
+}
+
 /*---------- inicio -----------*/
 .prueba{
     display: grid;
@@ -73,6 +82,13 @@
     "ritmo casa"
     " todos cuando";
 }
+@mixin sizes ($ancho,$alto){
+    height: $alto;
+    width: $ancho;
+}
+.ritmo{
+    @include sizes(450px,750px)
+}
 
 .ritmo{
     grid-area: ritmo;
@@ -83,8 +99,7 @@
     background-position: center;
     border-radius: 15px;
     box-shadow: 5px 8px 12px black;
-    width: 750px;
-    height: 450px;
+   
     transition: transform 0.3 ease-in-out;
     h3{
         font-size: 2.2em;
@@ -338,3 +353,11 @@
 @import"programas";
 @import"galeria";
 @import"contactos";
+
+@mixin size ($ancho,$alto){
+    height: $alto;
+    width: $ancho;
+}
+
+
+
