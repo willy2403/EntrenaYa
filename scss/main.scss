@@ -87,7 +87,7 @@
     width: $ancho;
 }
 .ritmo{
-    @include sizes(450px,750px)
+    @include sizes(750px,450px)
 }
 
 .ritmo{
@@ -99,7 +99,6 @@
     background-position: center;
     border-radius: 15px;
     box-shadow: 5px 8px 12px black;
-   
     transition: transform 0.3 ease-in-out;
     h3{
         font-size: 2.2em;
