@@ -284,8 +284,16 @@
         width: 100%;
         height: 100%;  
     }
-    .prueba h3{
-        font-size: 1.5em;
+    .prueba{
+       display: flex;
+       justify-content: flex-start; 
+        h3{font-size: 1.5em;
+    }
+    }
+    .navbar{
+        
+        display: flex;
+        justify-content: end;
     }
     .logo img{
         width: 30px;

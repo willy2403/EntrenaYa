@@ -74,13 +74,15 @@
 }
 /* -------------- tamaño celular ------------ */
 @media screen and (max-width: 500px){
+    
     .entrena{
+       width:400px ; 
         h1{
-            transform: translate(-18%, 11%);
+            transform: translate(-1%, 11%);
             font-size: 1.8em;
         }
         h2{
-            transform: translate(-18%, -29%);
+            transform: translate(-1%, -29%);
             font-size: 1.4em;
         } 
         p{

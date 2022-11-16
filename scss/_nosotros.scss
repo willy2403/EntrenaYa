@@ -1,6 +1,5 @@
  /*-------------------------NOSOTROS-----------------------*/
-/* --------------------------Section----------------------- */
-
+/* ------------------------Main----------------------- */
 .conocenos{
     width: 750px;
     text-align: center;
@@ -15,14 +14,13 @@
         margin: auto;
      }    
  }
+ /* ------------------------Section----------------------- */
  .container{
-    margin-left: 60px;
-    width: 600px;
-    margin-top: 50px;
     display: grid;
-    grid-template-columns: 0.4fr 0.4fr;
-    grid-template-rows: 0.2fr 0.2fr;
-    gap: 1% 3px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1%;
+    margin-top: 10px;
     grid-template-areas: 
     "inspirador dinamico"
     "personal infalible";
@@ -35,8 +33,8 @@
    align-items: center;
    figure{
       position: relative;
-      width: 900px;
-      height: 600px;
+      width: 700px;
+      height: 450px;
       overflow: hidden;
       border-radius: 6px;
       box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -60,7 +58,7 @@
    h3{
       color: white;
       font-weight: 400;
-      margin-bottom: 120px;
+      margin-bottom: 50px;
       transition: all 500ms ease-out;
       margin-top: 150px;
       font-size: 2.5em;
@@ -77,8 +75,8 @@
       visibility: visible;
    }
    &:hover h3{
-      margin-top: 130px;
-      margin-bottom: 20px;
+      margin-top: 25%;
+      margin-bottom: 2%;
    }
 }
 figure:hover img{
@@ -92,8 +90,8 @@ figure:hover img{
    align-items: center;
    figure{
       position: relative;
-      width: 900px;
-      height: 600px;
+      width: 700px;
+      height: 450px;
       overflow: hidden;
       border-radius: 6px;
       box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -112,8 +110,8 @@ figure:hover img{
    align-items: center;
    figure{
       position: relative;
-      width: 900px;
-      height: 600px;
+      width: 700px;
+      height: 450px;
       overflow: hidden;
       border-radius: 6px;
       box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -132,8 +130,8 @@ figure:hover img{
    align-items: center;
    figure{
       position: relative;
-      width: 900px;
-      height: 600px;
+      width: 700px;
+      height: 450px;
       overflow: hidden;
       border-radius: 6px;
       box-shadow: 0px 15px 25px rgba(0, 0 , 0, 0.50);
@@ -144,6 +142,7 @@ figure:hover img{
       transition: all 500ms ease-out;
    }
 }
+/* ------------------------Article----------------------- */
 .article{
    display: grid;
    grid-template-columns: 1fr;
