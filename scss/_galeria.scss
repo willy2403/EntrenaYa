@@ -1,4 +1,5 @@
-/* ---------------------Galeria---------------------- */
+/* ---------------------Galeria-------------------- */
+/* ---------------------Main ----------------- */
 .entrena{
     text-align: center;
     margin: auto;
@@ -7,9 +8,7 @@
     font-weight: 700;
     text-shadow: 0 0 8px rgba(0, 0 , 0, 0.8);
     }
-    .gale{
-        font-family: sans-serif;
-     }
+/* --------------------Section---------------- */
      .gale_{
         display: flex;
         align-items: center;
@@ -49,6 +48,7 @@
         }    
 /* ------------ tamaño tablet--------------- */
 @media screen and (max-width:768px){
+ /* ------------------Main ----------------- */   
     .entrena{
         h1{
             font-size: 2.5em;
@@ -60,6 +60,7 @@
             display: none;
         }
     }
+ /* -------------------Section ----------------- */   
     .galeria{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -68,13 +69,14 @@
         padding: 20px;
         grid-auto-flow: dense;
     }
+  /* ------------------Footer ----------------- */  
     .publicidad p{
         font-size: 1.2em;
     }
 }
 /* -------------- tamaño celular ------------ */
 @media screen and (max-width: 500px){
-    
+/* ---------------------Main ----------------- */    
     .entrena{
        width:400px ; 
         h1{
@@ -89,6 +91,7 @@
             display: none;
          }
     }
+ /* -------------------Section ----------------- */   
     .galeria{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -100,6 +103,7 @@
     .borra{
         display: none;
     }
+ /* --------------------Footer ----------------- */   
     .publicidad{
         padding-top: 20px;
         text-align: end; 

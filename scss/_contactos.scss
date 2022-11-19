@@ -1,7 +1,9 @@
 /* ---------------------Contacto ----------------- */
+/* ---------------------Main ----------------- */
 main{
     background-color:gray;
 }
+/* -------------------Article ----------------- */
 .empeza{
     margin: auto;
     height: 200px;
@@ -26,6 +28,7 @@ main{
 }
 /* --------------------Tamaño Tablet ------------------ */
 @media screen and (max-width:768px){
+/* ---------------------Main ----------------- */
     .empeza{
         height: 150px;
         width: 300px;
@@ -36,6 +39,7 @@ main{
             font-size: 1.2em;
         }
     }
+ /* ------------------Section ----------------- */   
     .formu{
         label{
             font-size: 0.9em;
@@ -44,6 +48,7 @@ main{
             font-size: 1.5em;
         }
     }
+ /* ---------------------Article ----------------- */   
     .paso{
         h2{
             text-align: center;
@@ -57,6 +62,7 @@ main{
 }
 /* ---------------Tamaño Movil---------------- */
 @media screen and (max-width: 500px){
+/* -----------------Main ----------------- */    
     .empeza{
         height: 150px;
         width: 300px; 
@@ -67,6 +73,7 @@ main{
             font-size: 1.0em;
         }
     }
+ /* ----------------Article ----------------- */   
     .paso{
         display: flex;
         flex-direction: column;
