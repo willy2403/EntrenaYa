@@ -14,7 +14,7 @@
         margin: auto;
      }    
  }
- /* ------------------------Section----------------------- */
+ /* ------------------------Section------------------- */
  .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,12 +168,14 @@ article img{
  /* ------------- Tamaño tablet ------------ */
  
  @media screen and (max-width:768px){
+/* -------------------Main-------------------- */ 
    .conocenos h1{
        font-size: 3.0em;
     }
     .conocenos h2{
       font-size: 2.0em;
    }
+/* -----------------Section---------------- */
    .container{
       margin-left: 50px;
       margin-top: 50px;
@@ -188,6 +190,7 @@ article img{
       "personal"
       "infalible";
    }
+/* ------------------Article------------------- */   
    .metodos{
       grid-area: metedos;
       margin-top: 80px;
@@ -208,8 +211,35 @@ article img{
 }
 /* ------------- Tamaño movil ----------- */
 @media screen and (max-width: 500px){
-
-   .container{
+/*-------------- Header ---------------*/ 
+    .prueba{
+      display: flex;
+      justify-content: flex-end; 
+       h3{display: none;
+       }
+   }
+      .logo img{
+       position: absolute;
+       width: 30px;
+       height: 35px;
+       transform: translate(-958%, 26%);
+   } 
+/* -------------------Main-------------------- */
+.conocenos{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+         h1{
+         text-align: center;
+         font-size: 1.5em;
+         }
+         h2{
+         text-align: center;
+         font-size: 0.8em;
+         }
+      } 
+/* -----------------Section---------------- */
+      .container{
        display: grid;
        grid-template-columns: 0.4fr;
        grid-template-rows: 1fr 1fr;
@@ -219,75 +249,64 @@ article img{
        "dinamico"
        "personal"
        "infalible";
-    }
-    .conocenos{
-      width: 200px;
-      display: flex;
-      flex-direction: column;
-      h1{
-         text-align: center;
-         font-size: 1.5em;
-      }
-      h2{
-         text-align: center;
-         font-size: 0.8em;
-      }
-   }
+       }
+ 
    .inspirador{
-      width: 300px;
-      height: 250px;
-      figure{
+      width: 100%;
+      height: 100%;
+         figure{
          width: 100%;
          height: 100%;
+         }
+      } 
+   .dinamico{
+      width: 100%;
+      height: 100%;
+         figure{
+         width: 100%;
+         height: 100%;
+         }
+   }
+   .personal{
+      width: 100%;
+      height: 100%;
+         figure{
+         width: 100%;
+         height: 100%;
+         }
+   }
+   .infalible{
+   width: 300px;
+   height: 250px;
+      figure{
+      width: 100%;
+      height: 100%;
       }
-  } 
-  .dinamico{
-   width: 300px;
-   height: 250px;
-   figure{
-      width: 100%;
-      height: 100%;
    }
-}
-.personal{
-   width: 300px;
-   height: 250px;
-   figure{
-      width: 100%;
-      height: 100%;  
-   }
-}
-.infalible{
-   width: 300px;
-   height: 250px;
-   figure{
-      width: 100%;
-      height: 100%;
-   }
-}
-.capa{
-   h3{
+   .capa{
+      h3{
       color: white;
       font-weight: 400;
-      margin-bottom: 15px;
       transition: all 500ms ease-out;
       font-size: 1.6em;
-   }
-   p{
+      }
+      p{
       display: none;
+      }
    }
-}
-.metodos{
+/* ------------------------Article----------------------- */ 
+   .metodos{
    display: none; 
-  }
-  .metodos_ img{
+   }
+   .metodos_ img{
    display: none;
-}
-.publicidad{
+   }
+/* -------------------footer--------------------- */
+   .publicidad{
    padding-top: 20px;
    text-align: end; 
    display: flex;
    flex-direction: row;
    align-items: flex-end;
-}
+   }
 }

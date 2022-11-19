@@ -5,8 +5,9 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  background-color: white;
 }
 
 h1 {
@@ -35,6 +36,7 @@ p {
 }
 
 /*---------- inicio -----------*/
+/*-------------- Header ---------------*/
 .prueba {
   display: grid;
   grid-template-columns: 1fr;
@@ -50,6 +52,7 @@ p {
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 3px;
+  color: #333;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -255,16 +258,7 @@ p {
 
 /* --------------------Tamaño Tablet -----------------*/
 @media screen and (max-width: 768px) {
-  .muevete {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 2%;
-    padding-top: 1%;
-    grid-template-areas: "ritmo" "casa" "todos" "cuando";
-  }
+  /*-------------- Header ---------------*/
   .prueba h3 {
     font-size: 1.9em;
   }
@@ -272,6 +266,7 @@ p {
     width: 40px;
     height: 35px;
   }
+  /* ----------------Main--------------- */
   .animate {
     width: 98vw;
     height: 95vh;
@@ -281,6 +276,17 @@ p {
   }
   .animate h2 {
     font-size: 2.2em;
+  }
+  /* --------------- section -------------- */
+  .muevete {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    padding-top: 1%;
+    grid-template-areas: "ritmo" "casa" "todos" "cuando";
   }
   .ritmo {
     width: 750px;
@@ -298,33 +304,35 @@ p {
     width: 750px;
     height: 370px;
   }
+  /* ------------------ article ------------------- */
   .video {
     display: none;
   }
+  /* -------------------footer--------------------- */
   .publicidad {
     margin-top: 90px;
   }
 }
 /* -------------------Tamaño movil-------------- */
 @media screen and (max-width: 500px) {
+  /*-------------- Header ---------------*/
+  .prueba {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .prueba h3 {
+    display: none;
+  }
+  .logo img {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    transform: translate(-1055%, 26%);
+  }
+  /* ----------------Main--------------- */
   .animate {
     width: 100%;
     height: 100%;
-  }
-  .prueba {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .prueba h3 {
-    font-size: 1.5em;
-  }
-  .navbar {
-    display: flex;
-    justify-content: end;
-  }
-  .logo img {
-    width: 30px;
-    height: 25px;
   }
   .animate h1 {
     font-size: 2em;
@@ -334,6 +342,7 @@ p {
     font-size: 1.5em;
     transform: translate(17%, -127%);
   }
+  /* --------------- section -------------- */
   .ritmo {
     width: 100%;
     height: 100%;
@@ -400,7 +409,7 @@ p {
   margin: auto;
 }
 
-/* ------------------------Section----------------------- */
+/* ------------------------Section------------------- */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -559,12 +568,14 @@ article img {
 
 /* ------------- Tamaño tablet ------------ */
 @media screen and (max-width: 768px) {
+  /* -------------------Main-------------------- */
   .conocenos h1 {
     font-size: 3em;
   }
   .conocenos h2 {
     font-size: 2em;
   }
+  /* -----------------Section---------------- */
   .container {
     margin-left: 50px;
     margin-top: 50px;
@@ -575,6 +586,7 @@ article img {
     gap: 1%;
     grid-template-areas: "inspirador" "dinamico" "personal" "infalible";
   }
+  /* ------------------Article------------------- */
   .metodos {
     grid-area: metedos;
     margin-top: 80px;
@@ -595,13 +607,21 @@ article img {
 }
 /* ------------- Tamaño movil ----------- */
 @media screen and (max-width: 500px) {
-  .container {
-    display: grid;
-    grid-template-columns: 0.4fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1% 3px;
-    grid-template-areas: "inspirador" "dinamico" "personal" "infalible";
+  /*-------------- Header ---------------*/
+  .prueba {
+    display: flex;
+    justify-content: flex-end;
   }
+  .prueba h3 {
+    display: none;
+  }
+  .logo img {
+    position: absolute;
+    width: 30px;
+    height: 35px;
+    transform: translate(-958%, 26%);
+  }
+  /* -------------------Main-------------------- */
   .conocenos {
     width: 200px;
     display: flex;
@@ -615,25 +635,33 @@ article img {
     text-align: center;
     font-size: 0.8em;
   }
+  /* -----------------Section---------------- */
+  .container {
+    display: grid;
+    grid-template-columns: 0.4fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1% 3px;
+    grid-template-areas: "inspirador" "dinamico" "personal" "infalible";
+  }
   .inspirador {
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .inspirador figure {
     width: 100%;
     height: 100%;
   }
   .dinamico {
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .dinamico figure {
     width: 100%;
     height: 100%;
   }
   .personal {
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .personal figure {
     width: 100%;
@@ -650,19 +678,20 @@ article img {
   .capa h3 {
     color: white;
     font-weight: 400;
-    margin-bottom: 15px;
     transition: all 500ms ease-out;
     font-size: 1.6em;
   }
   .capa p {
     display: none;
   }
+  /* ------------------------Article----------------------- */
   .metodos {
     display: none;
   }
   .metodos_ img {
     display: none;
   }
+  /* -------------------footer--------------------- */
   .publicidad {
     padding-top: 20px;
     text-align: end;
@@ -672,6 +701,7 @@ article img {
   }
 }
 /* ----------------------Programas-------------------- */
+/* ----------------Main--------------- */
 .programas {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -771,6 +801,7 @@ article img {
 
 /* ----------------------Tamaño Tablet---------------- */
 @media screen and (max-width: 768px) {
+  /* -------------------------main---------------------- */
   .entrena {
     width: 600px;
   }
@@ -780,14 +811,13 @@ article img {
   .entrena h2 {
     font-size: 2.5em;
   }
+  /* ------------------------ section ---------------------- */
   .programas {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
     grid-template-columns: 0.5fr;
     grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr;
-    gap: 1%;
     padding-top: 1%;
+    margin-left: 45px;
     grid-template-areas: "fuerza" "resistencia" "potencia" "flexibilidad";
   }
   .fuerza {
@@ -829,28 +859,28 @@ article img {
 }
 /* --------------------Tamaño Movil ------------------ */
 @media screen and (max-width: 500px) {
+  /* ------------------------ section ---------------------- */
   .programas {
     display: grid;
     grid-template-columns: 0.4fr;
     grid-template-rows: 0.4fr 0.4fr;
-    gap: 1%;
-    margin-left: 10px;
+    margin-left: 45px;
     grid-template-areas: "fuerza" "resistencia" "potencia" "flexibilidad";
   }
   .fuerza {
     grid-area: fuerza;
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .resistencia {
     grid-area: resistencia;
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .potencia {
     grid-area: potencia;
-    width: 350px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
   }
   .flexibilidad {
     grid-area: flexibilidad;
